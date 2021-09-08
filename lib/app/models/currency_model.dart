@@ -5,8 +5,6 @@ class CurrencyModel {
   final double bitcoin;
   final double real;
 
-  // final double real;
-
   CurrencyModel(
       {required this.name,
       required this.real,
@@ -16,10 +14,14 @@ class CurrencyModel {
 
   static List<CurrencyModel> getCurrencies() {
     return <CurrencyModel>[
-      CurrencyModel(name: 'Real', dolar: 1.5, euro: 54.0, bitcoin: 5.0),
-      CurrencyModel(name: 'Dolar', dolar: 1.7, euro: 44.0, bitcoin: 55.0),
-      CurrencyModel(name: 'Euro', dolar: 1.7, euro: 25.0, bitcoin: 66.0),
-      CurrencyModel(name: 'Bitcoin', dolar: 7.0, euro: 77.0, bitcoin: 77.0),
+      CurrencyModel(
+          name: 'Real', dolar: 4.5, euro: 7.0, bitcoin: 55.0, real: 0),
+      CurrencyModel(
+          name: 'Dolar', dolar: 4.7, euro: 7.0, bitcoin: 55.0, real: 0),
+      CurrencyModel(
+          name: 'Euro', dolar: 4.7, euro: 7.0, bitcoin: 66.0, real: 0),
+      CurrencyModel(
+          name: 'Bitcoin', dolar: 4.0, euro: 8.0, bitcoin: 77.0, real: 0)
     ];
   }
 }
